@@ -1,0 +1,91 @@
+body{
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 98%);
+    font-family: 'Poppins', sans-serif;
+    color: hsl(234, 12%, 34%);
+}
+main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5rem;
+    text-align: center;
+}
+.pre-h1{
+    font-size: 2rem;
+    margin-bottom: 0%;
+}
+h1{
+    margin-top: 0%;
+}
+p{
+    font-weight: 100;
+}
+.card{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(12, auto);
+    grid-template-rows: repeat(9,1fr);
+    gap: 1em;
+}
+.supervisor{
+    grid-column: 1/4;
+    grid-row: 2/7;
+    border-top: 0.3em solid hsl(180, 62%, 55%);
+}
+.builder{
+    grid-column: 4/8;
+    grid-row: 1/5;
+    border-top: 0.3em solid hsl(0, 78%, 62%);
+}
+.karma{
+    grid-column: 4/8;
+    grid-row: 5/9;
+    border-top: 0.3em solid hsl(34, 97%, 64%);
+}
+.calculator{
+    grid-column: 8/12;
+    grid-row: 2/7;
+    border-top: 0.3em solid hsl(212, 86%, 64%);
+}
+.supervisor, .builder, .karma, .calculator{
+    border-radius: 7px;
+    box-shadow: 1px 7px 4px 1px hsl(229, 37%, 88%);
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem 0 2rem;
+}
+h3{
+    justify-self: center;
+    text-align: left;
+    margin: 2rem 0 0 0;
+}
+.card p{
+    justify-self: center;
+    align-self: center;
+    text-align: left;
+}
+.card img{
+    justify-self: flex-end;
+    align-self: flex-end;
+}
+
+@media (max-width: 450px) {
+    .card{
+        display: flex;
+        flex-direction: column;
+    }
+    .supervisor, .builder, .karma, .calculator{
+        height: auto;
+    }
+}
+
+@media (max-width: 450px) {
+    .card{
+        display: flex;
+        flex-direction: column;
+    }
+    .supervisor, .builder, .karma, .calculator{
+        height: auto;
+    }
+}
